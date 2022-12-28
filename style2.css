@@ -1,0 +1,22 @@
+body .close i {
+    transform: rotate(180deg);
+    transition: all 0.5s ease-in-out;
+}
+body i {transition: all 0.5s ease-in-out;}
+
+body .answer { /* BACK RESPOSTA */
+    max-height: 0px;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+body .active {
+    margin: 15px 0;
+    max-height: 300px;
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+}
+
+body .question:hover {
+    cursor: pointer;
+}

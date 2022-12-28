@@ -1,0 +1,127 @@
+* { /* CSS RESET */
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+}
+
+body {
+    background-color: #db8686;
+    background-repeat: repeat;
+    background-position: right top;
+    background-attachment: fixed;
+    /* background-size: 300px 300px; */
+}
+
+header {
+    width: 80vw;
+    height: 30vh;
+    border: 2px solid #000;
+    border-radius: 10px;
+    background-color: rgba(15, 10, 10, 0.5);
+    margin: 0 auto;
+    margin-top: 5px;
+    display: flex;
+}
+
+header .div1 {
+    width: 20%;
+    height: 90%;
+    background-color: #00F;
+    border: 2px solid #000;
+    margin: auto; 
+    margin-left: 1%;   
+}
+
+header .div2 {
+    width: 30%;
+    height: 10%;
+    background-color: #00F;
+    border: 2px solid #000;
+    margin: auto;
+    margin-top: 1%;
+    margin-right: 1%;   
+}
+
+#nav {
+    width: 80vw;
+    height: 10vh;
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 1%
+}
+
+#nav div {
+    border: 2px solid #000;
+    border-radius: 2px;
+    width: 49%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+main {
+    width: 80vw;
+    height: 90vh;
+    margin: 0 auto;
+    margin-top: 10px;
+    display: flex;
+    gap: 1%;
+}
+
+main aside {
+    width: 30%;
+    height: 100%;
+    background-color: #0FF;
+    border: 2px solid #000;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    /* gap > flex */
+    justify-content: space-around;
+}
+
+main aside section {
+    background-color: #FF0;
+    border: 2px solid #000;
+    width: 90%;
+    height: 45%;
+    margin: auto;
+}
+
+main article {
+    width: 60%;
+    height: 100%;
+    background-color: #F7F;
+    border: 2px solid #000;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-content: flex-start;
+    /* row - column */
+    gap: 0% 1%;
+}
+
+main article section {
+    width: 45%;
+    height: 20%;
+    background-color: #0FF;
+    margin-top: 5%;
+    border: 2px solid #000;
+}
+
+main article .grande {
+    width: 95%;
+    height: 20%;
+    background-color: #FF0;
+}
+
+footer {
+    width: 80vw;
+    height: 15vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 2px solid #000;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-top: 10px;
+}

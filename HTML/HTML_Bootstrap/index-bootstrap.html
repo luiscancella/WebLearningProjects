@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<div class="container text-danger" align="center">
+<h1>Adoção de gatos</h1>
+</div>
+
+<div class="table-responsive">
+    <table class="table table-hover table-bordered table-stripped">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th><a href="#" data-toggle="tooltip" title="Raça do gato">Raça</a></th>
+            <th><a href="#" data-toggle="tooltip" title="P/M/G">Porte</a></th>
+            <th><a href="#" data-toggle="tooltip" title="Anos">Idade</a></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Persa</td>
+            <td>M</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Siamês</td>
+            <td>M</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Maine Coon</td>
+            <td>G</td>
+            <td>7</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Munchkin</td>
+            <td>P</td>
+            <td>N/A</td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+    </div>
+</div>
+<hr color="black">
+<div class="container" style="background-color: rgb(205, 204, 204);;">
+    <h2>Preencha para prosseguir com a adoção:</h2>
+    <h5 >Em breve entraremos em contato para procedimento da adoção!</h5>
+    <form class="form-horizontal">
+
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="email">Nome:</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="name" placeholder="Digite seu nome">
+            </div>
+          </div>  
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="email">Email:</label>
+        <div class="col-sm-10">
+          <input type="email" class="form-control" id="email" placeholder="Digite seu email">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="email">Número:</label>
+        <div class="col-sm-10">
+          <input type="tel" class="form-control" id="telefone" placeholder="Digite seu telefone">
+        </div>
+      </div>
+
+      <div class="container">
+        
+        <!-- Trigger the modal with a button -->
+        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Enviar</button>
+      
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" role="dialog">
+          <div class="modal-dialog">
+          
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">Enviado!!</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+              <div class="modal-body">
+                <p>Em breve entraremos em contato para procedimento da adoção!</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">OK!</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+
+
+
+  </div>
+
+
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script></body>
+</body>
+</html>

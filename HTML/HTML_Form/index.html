@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title> Atividade 4 </title>
+    <meta charset="utf-8">
+</head>
+
+<body background="img/back.jpg">
+    <fieldset>
+    <legend align="center"><font color="white"> DADOS DE ENTRADA </font></legend>
+    <form action="enviar.php" method="post" name="cadastro">
+    <table border="1" bgcolor="white" align="center">
+    <tr>
+    <td><label> Nome: </label></td>
+    <td><input type="text" id="nome" name="nome" size="30" maxlength="100" placeholder="Digite seu nome" required/></td>
+    </tr>
+    <tr>
+    <td><label> Senha: </label></td>
+    <td><input type="password" id="senha" name="senha" size="30" placeholder="Digite sua senha" required/></td>
+    </tr>
+    <tr>
+    <td><label> E-mail: </label></td>
+    <td><input type="email" id="mail" name="mail" size="30"
+    placeholder="Digite seu e-mail" required/></td>
+    </tr>
+    <tr>
+    <td><label> Telefone: </label></td>
+    <td><input type="tel" id="telefone" name="telefone" size="30" placeholder="Digite seu telefone"/></td>
+    </tr>
+    <tr>
+    <td><label> Data de nascimento: </label></td>
+    <td align="center"><input type="date" id="data_nasc" name="data_nasc" max="2004-01-01" required/></td>
+    </tr>
+    <tr>
+    <td><label> Sexo: </label></td>
+    <td align="center">
+    <label><input type="radio" id="sexo" name="sexo" value="M" required/> Masculino </label>
+    <label><input type="radio" id="sexo" name="sexo" value="F" required/> Feminino </label>
+    </td></tr>
+    <tr>
+    <td><label> Estado: </label></td>
+    <td align="center"><select id="estado" name="estado" required>
+        <option value="" selected="selected" align="center"> ----- </option>
+        <optgroup label="Nordeste">
+            <option value="BA">Bahia</option>
+            <option value="AL">Alagoas</option>
+            <option value="CE">Ceará</option>
+            <option value="PB">Paraíba</option>
+            <option value="PE">Pernambuco</option>
+            <option value="PI">Piauí</option>
+            <option value="RN">Rio Grande do Norte</option>
+            <option value="MA">Maranhão</option>
+            <option value="SE">Sergipe</option>
+        </optgroup> 
+        <optgroup label="Sudeste">
+            <option value="ES">Espirito Santo</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="SP">São Paulo</option>
+            <option value="RJ">Rio de Janeiro</option>
+        </optgroup> 
+        <optgroup label="Sul">
+            <option value="RS">Rio Grande do Sul</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="PR">Paraná</option>
+        </optgroup> 
+        <optgroup label="Centro Oeste">
+            <option value="MS">Mato Grosso do Sul</option>
+            <option value="MT">Mato Grosso</option>
+            <option value="DF">Distrito Federal</option>
+            <option value="GO">Goiás</option>
+        </optgroup> 
+        <optgroup label="Norte">
+            <option value="AC">Acre</option>
+            <option value="AP">Amapá</option>
+            <option value="AM">Amazonas</option>
+            <option value="PA">Pará</option>
+            <option value="RO">Rondônia</option>
+            <option value="RR">Roraima</option>
+            <option value="TO">Tocantins</option>
+        </optgroup>
+    </select>
+    </td></tr>
+    <tr><td colspan="3" align="center"><input type="submit" id="enviar_cadastro" name="enviar_cadastro"/></td></tr>
+    </table>
+    </form>
+    </fieldset>
+    <fieldset>
+        <legend align="center"><font color="white"> DADOS DE ESCOLHA </font></legend>
+        <form action="enviar.php" method="post" name="cadastro">
+        <table border="1" bgcolor="white" align="center">
+        <tr>
+        <td><label> Processador: </label></td>
+        <td colspan="2" align="center"><select id="process" name="process">
+            <option value="null" selected="selected" align="center"> --- </option>
+            <optgroup label="INTEL"> </optgroup>
+                <option value="i3"> i3 </option>
+                <option value="i3"> i5 </option>
+                <option value="i7"> i7 </option>
+                <option value="i9"> i9 </option>
+            <optgroup label="AMD"> </optgroup>
+                <option value="r3"> Ryzen 3 </option>
+                <option value="r3"> Ryzen 5 </option>
+                <option value="r7"> Ryzen 7 </option>
+                <option value="r9"> Ryzen 9 </option>
+        </select>
+        </td></tr>
+        <tr>
+        <td><label> Memoria: </label></td>
+        <td>
+        <label><input type="radio" id="memoria" name="memoria" value="8" required/> 2x 8GB </label>
+        <label><input type="radio" id="memoria" name="memoria" value="16" required/> 2x 16GB </label>
+        </td><td>
+        <select id="memoriamhz" name="memoriamhz" required>
+            <option value="null" align="center" selected="selected"> --- </option>
+            <option value="2666mhz"> 2666MHz </option> 
+            <option value="3000mhz"> 3000MHz </option>
+            <option value="3200mhz"> 3200MHz </option> 
+            <option value="3600mhz"> 3600MHz </option> 
+        </select></td>
+        </tr>
+        <tr>
+        <td><label> Armazenamento: </label></td>
+        <td colspan="2" align="center"><select id="gigas" name="gigas" required>
+            <option value="null" align="center" selected="selected"> --- </option>
+            <option value="250gb"> 250 GB </option> 
+            <option value="500gb"> 500 GB </option>
+            <option value="800gb"> 800 GB </option> 
+            <option value="1tb"> 1 TB </option> 
+        </select>
+        <label><input type="checkbox" id="armazenamento" name="armazenamento" value="8"/> HD </label>
+        <label><input type="checkbox" id="armazenamento" name="armazenamento" value="16"/> SSD </label>
+        </td></tr>
+        <tr>
+        <td><label> Fonte: </label></td>
+        <td colspan="2">
+        <label><input type="radio" id="fonte" name="fonte" value="450W" required/> 450W </label>
+        <label><input type="radio" id="fonte" name="fonte" value="500W" required/> 500W </label>
+        <label><input type="radio" id="fonte" name="fonte" value="650W" required/> 650W </label>
+        <label><input type="radio" id="fonte" name="fonte" value="800W" required/> 800W </label>
+        </td></tr>
+        <tr>
+        <td><label> PFC: </label></td>
+        <td colspan="2" align="center"><label><input type="radio" id="pfc" name="pfc" value="8" required/> Ativo </label>
+        <label><input type="radio" id="pfc" name="pfc" value="16" required/> Passivo </label></td>
+        </tr>
+        <tr><td colspan="3" align="center"> <input type="submit" id="enviar_pc" name="enviar_pc"/> </td></tr>
+        </table>
+        </form>
+    </fieldset>
+    <fieldset>
+        <form action="enviar.php" method="post" name="cadastro">
+        <legend align="center"><font color="white"> AVALIAÇÃO </font></legend>
+        <table border="1" align="center" bgcolor="white">
+        <tr>
+        <td><label> Nota: </label></td>
+        <td>
+        <label><input type="radio" id="avaliacao" name="avaliacao" value="450W" required/> 1 - Muito Ruim </label>
+        <label><input type="radio" id="avaliacao" name="avaliacao" value="450W" required/> 2 Ruim </label>
+        <label><input type="radio" id="avaliacao" name="avaliacao" value="450W" required/> 3  Mediano </label>
+        <label><input type="radio" id="avaliacao" name="avaliacao" value="450W" required/> 4  Bom </label>
+        <label><input type="radio" id="avaliacao" name="avaliacao" value="450W" required/> 5 Muito Bom </label>
+        </td></tr>
+        <tr>
+        <td><label> Comentário: </label></td>
+        <td><textarea id="assunto" name="assunto" cols="40" maxlength="240" placeholder="Digite o assunto (Max 240 caracteres)" required=""></textarea>
+        </td></tr>
+        <tr><td colspan="3" align="center"><input type="submit" id="enviar_cadastro" name="enviar_cadastro"/></td></tr>
+        </table>
+        </form>
+    </fieldset>
+</body>
+</html>
